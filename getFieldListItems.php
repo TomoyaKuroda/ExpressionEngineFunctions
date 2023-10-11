@@ -1,3 +1,4 @@
+// Get field list items from Checkboxes Fieldtype (Checkbox options must be Populate manually)
 function getFieldListItems($field_name) : array {
   $sql = "SELECT field_list_items FROM `exp_channel_fields` WHERE field_name = '$field_name' ";
   $query = ee()->db->query($sql);
